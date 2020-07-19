@@ -63,7 +63,7 @@ h4 {
   display: flex;
   /*justify-content: space-between;*/
 }
-.navigation.link {
+.navigation {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -119,7 +119,6 @@ a {
 */
 .site-nav-list {
   display: flex;
-  outline: 1px solid black;
 }
 .site-nav-list {
   font-style: 400;
@@ -179,7 +178,7 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--text-color);
-  margin-bottom: 94px;
+
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -196,7 +195,6 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  outline: 1px solid black;
 }
 
 .hero-button {
@@ -218,13 +216,15 @@ a {
 .aboutus-list {
   display: flex;
   list-style: none;
-  margin-bottom: 94px;
-  outline: 1px solid black;
+
   padding-top: 94px;
   padding-bottom: 47px;
 }
 .aboutus-list-item:not(:last-child) {
   margin-right: 30px;
+}
+.aboutus-list-item {
+  padding-top: 25px;
 }
 .aboutus-title {
   font-style: 400;
@@ -233,7 +233,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  outline: 1px solid black;
+
   color: var(--primary-text-color);
 }
 .aboutus-text {
@@ -244,12 +244,15 @@ a {
 
   color: var(--text-color);
 }
-
+/*.aboutus-item img {
+  width: 270px;
+  background-color: var(--social-list-color);
+}
+*/
 /*What We do*/
 .whatwedo-list {
   display: flex;
   justify-content: center;
-  outline: 1px solid black;
 }
 .whatwedo-section {
   margin-bottom: 94px;
@@ -259,15 +262,22 @@ a {
 
 h3.whatwedo-list-link {
   margin: 0;
+  color: var(--primary-white-color);
 }
 .whatwedo-list-link {
   margin-top: 0;
+  background-color: #2f303a;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.whatwedo-list-link:link {
+  color: var(--primary-white-color);
 }
 .whatwedo-list {
   list-style: none;
   text-align: center;
 }
-.whatwedo-list-item {
+.whatwedo-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .whatwedo-list-title {
@@ -277,22 +287,18 @@ h3.whatwedo-list-link {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
-  outline: 1px solid black;
+
   text-transform: uppercase;
 
   color: var(--primary-white-color);
 }
 /*OURE TEAME*/
-.flex-container {
-  display: flex;
-  outline: 1px solid black;
-  flex-wrap: nowrap;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .team-list {
   display: flex;
   margin-left: 0;
+
+  padding-bottom: 94px;
 }
 .team-list {
   list-style: none;
@@ -321,7 +327,10 @@ h3.whatwedo-list-link {
   text-decoration: none;
   color: var(--social-list-color);
   justify-content: center;
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .team-list-social-item {
   font-style: non;
@@ -343,15 +352,37 @@ h3.whatwedo-list-link {
 /*Uor Clients*/
 .section-client-list {
   display: flex;
-  outline: 1px solid black;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  margin-bottom: 94px;
+  justify-content: center;
+  align-items: center;
+}
+.client-h2 {
+  margin-bottom: 50px;
 }
 .section-client-list {
   list-style: none;
 }
-.section-client-list-link:hover {
+.section-client-list-link:hover,
+.section-client-list-link:focus {
   color: var(--accent-color);
+}
+.section-clients-list.link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.client-item {
+  justify-content: space-around;
 }
 /*footer*/
 .logo-footer {
@@ -465,15 +496,7 @@ h3.whatwedo-list-link {
   border: none;
   justify-content: center;
 }
-/*
-.filter-list-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
-*/
+
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
 }
