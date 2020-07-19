@@ -386,89 +386,6 @@ h3.whatwedo-list-link {
 .client-item {
   justify-content: space-around;
 }
-/*footer*/
-.logo-footer {
-  font-family: var(--secondary-font);
-  font-style: 400;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  margin-right: 85px;
-  color: var(--primary-white-color);
-}
-.footer {
-  display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.logo-accent-footer {
-  color: var(--primary-white-color);
-}
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-}
-.footer {
-  background-color: #2f303a;
-}
-.footer-list {
-  list-style: none;
-  text-decoration: none;
-  background-color: #2f303a;
-}
-.footer-list-link {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
-}
-
-.footer-list-adress {
-  font-family: var(--primary-white-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  background-color: var(--background-footer-color);
-  text-decoration: none;
-}
-.footer-list-adress-link {
-  color: #000;
-}
-
-.footer-social-list {
-  list-style: none;
-  font-family: var(--main-font);
-  font-style: 400;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primary-white-color);
-}
-.footer-social-list-item:hover {
-  color: var(--accent-color);
-}
-.footer-title {
-  font-family: var(--main-font);
-  font-style: 400;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  background-color: var(--background-footer-color);
-  color: var(--primary-white-color);
-  margin-bottom: 20px;
-  display: block;
-}
 
 /*PORTFOLIO*/
 
@@ -605,8 +522,9 @@ h3.whatwedo-list-link {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: var(--light-text-color);
+  color: var(--primary-white-color);
   margin-bottom: 20px;
+  margin-right: 0;
 }
 .logo-footer span {
   color: var(--accent-color);
