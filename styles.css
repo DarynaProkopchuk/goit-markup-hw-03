@@ -403,7 +403,7 @@ h3.whatwedo-list-link {
   justify-content: center;
   margin-bottom: 34px;
   margin-top: 93px;
-  outline: 1px solid black;
+
   flex-grow: 1;
   margin-left: 0;
 }
@@ -420,10 +420,7 @@ h3.whatwedo-list-link {
   border-radius: 4px;
 }
 .filter-list-button {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px, 22px;
   border: none;
   justify-content: center;
 }
