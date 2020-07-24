@@ -151,8 +151,11 @@ h4 {
 .address-nav-list-link:hover {
   color: var(--accent-color);
 }
+.address-nav-list-link {
+  display: flex;
+}
 .address-nav-list-link:hover.address-nav-mailto {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .address-nav-list-link {
   font-style: 400;
@@ -237,6 +240,9 @@ h4 {
   width: 270px;
   justify-content: center;
 }
+.aboutus-list-svg {
+  align-items: center;
+}
 .aboutus-title {
   font-style: 400;
   font-weight: 700;
@@ -255,11 +261,7 @@ h4 {
 
   color: var(--text-color);
 }
-/*.aboutus-item img {
-  width: 270px;
-  background-color: var(--social-list-color);
-}
-*/
+
 /*What We do*/
 .whatwedo-list {
   display: flex;
@@ -374,7 +376,37 @@ h3.whatwedo-list-link {
 .team-list-social :focus {
   color: var(--accent-color);
 }
-
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-link-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-link:hover,
+.social-link:focus,
+.social-link:hover.social-link-svg,
+.social-link:focus.social-link-svg {
+  fill: var(--primary-white-color);
+}
+.social-list-circle {
+  fill: var(--primary-white-color);
+}
+.social-list-circle:hover {
+  background-color: var(--accent-color);
+}
+.social-list-circle:hover.social-list-circle-svg {
+  fill: var(--primary-white-color);
+}
+.social-list-circle-svg {
+  fill: #afb1b8;
+}
 /*Uor Clients*/
 .section-client-list {
   display: flex;
