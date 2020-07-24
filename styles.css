@@ -151,6 +151,9 @@ h4 {
 .address-nav-list-link:hover {
   color: var(--accent-color);
 }
+.address-nav-list-link:hover.address-nav-mailto {
+  color: var(--accent-color);
+}
 .address-nav-list-link {
   font-style: 400;
   font-weight: 500;
@@ -159,8 +162,7 @@ h4 {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-
-.title {
+.address-nav-list-link link.title {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.17;
